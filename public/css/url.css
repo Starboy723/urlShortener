@@ -1,0 +1,78 @@
+@font-face {
+    font-family:myfont;
+    src: url("../fonts/NIKEA.otf");
+}
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    font-family:myfont;
+}
+nav ul a{
+    text-decoration:none;
+    color:black;
+    transition:0.5s ease;
+
+}
+nav ul a:hover{
+    transform: scale(1.09,1.09);
+    color:rgba(15, 15, 15, 0.533);
+}
+.active{
+    color:rgba(15, 15, 15, 0.533);
+}
+.shortener-con{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:300px;
+    margin-top:40px;
+    flex-direction: column;
+    gap:40px;
+}
+.shortener-con input{
+    padding:8px;
+    width:400px;
+    border:none;
+    background-color:rgba(128, 128, 128, 0.38);
+    font-size:15px;
+}
+.shortener-con input:focus{
+    outline:none;
+}
+.btn{
+    padding:9px;
+    border:none;
+    font-family:myfont;
+    transition:1s ease;
+    background-color: rgba(206, 201, 201, 0.366);
+}
+.btn:hover{
+    background-color:rgba(37, 37, 37, 0.804);
+    color:white;transform:scale(0.97,0.97);
+}
+.url-div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    margin-top:50px;
+}
+.test-btn,.stats-btn{
+    padding:13px;
+    border:none;
+    font-family:myfont;
+    transition:.5s ease;
+    width:100px;
+}
+.test-btn{
+    background-color: rgba(6, 255, 2, 0.746);
+}
+.stats-btn{
+    background-color: rgba(255, 2, 2, 0.746);
+}
+.stats-btn:hover,.test-btn:hover{
+    background-color:rgba(37, 37, 37, 0.804);
+    color:white;transform:scale(0.97,0.97);
+}

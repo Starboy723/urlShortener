@@ -1,0 +1,101 @@
+*{
+    margin:0px;
+}
+*::-webkit-scrollbar{
+    display:none;
+}
+.stats-con{
+    font-family: Arial, Helvetica, sans-serif;
+    width:100vw;
+    height:80vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    gap:10px;
+    margin-top:100px;
+    overflow:hidden;
+}
+table{
+    border:none;
+    border-collapse: collapse;
+    border-top-left-radius:10px;
+    text-align:center;
+    border-bottom:2px solid rgba(13, 229, 128, 0.686);
+}
+table thead{
+    position:sticky;
+    z-index:1;
+    top:0px;
+    background-color:rgba(13, 229, 128, 0.993);
+    border-top-left-radius:10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+table thead th:nth-child(1){
+    border-top-left-radius:10px;
+
+}
+table thead th:last-child{
+    border-top-right-radius:10px;
+
+}
+table thead th{
+    position:sticky;
+    top:0px;
+    padding:10px;
+}
+table td{
+    padding:10px;
+    background-color:rgba(128, 128, 128, 0.031);
+}
+.stats-con>div{
+    width:690px;
+    height:300px;
+    text-align:center;
+    overflow-y: auto;
+}
+h3{
+    margin-right:80px;
+    margin-bottom:40px;
+    font-family:Arial, Helvetica, sans-serif
+}
+.create-btn{
+   background:rgb(26, 255, 26);
+   padding:8px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight:bold;
+   border:none;
+   border-radius:4px;
+   transition:.5s ease;   
+}
+.create-btn:hover{
+    transform:scale(1.1,1.1);
+    background-color:black;
+    color:white;
+}
+.stats-btn{
+    padding:7px;
+    width:90px;
+    border:none;
+    font-weight:bold;
+    color:rgb(0, 0, 0);
+    border-radius:2px;
+    background-color:rgba(255, 61, 44, 0.914);
+    transition:.5s ease;
+
+}
+.test-btn{
+    padding:7px;
+    width:90px;
+    border:none;
+    font-weight:bold;
+    color:rgb(0, 0, 0);
+    border-radius:2px;
+    transition:.5s ease;
+    background-color:rgba(31, 255, 31, 0.914);
+}
+.test-btn:hover,.stats-btn:hover{
+    transform:scale(1.06,1.06);
+    background-color: black;
+    color:white;
+}

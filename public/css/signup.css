@@ -1,0 +1,62 @@
+@font-face {
+    font-family:myfont;
+    src: url("./NIKEA.otf");
+}
+*{
+    user-select:none;
+    margin:0px;
+}
+body{
+    /* font-family:myfont; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:13px;
+}
+input:focus{
+    outline:none;
+}
+.signup-con{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.signup-div{
+    border:2px solid rgba(0, 0, 0, 0.185);
+    width:300px;
+    height:400px;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items:center;
+    gap:20px;
+}
+.signup-div > div{
+    display:flex;
+    font-size:12px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.signup-div h3{
+    font-size:20px;
+}
+.signup-div > div input{
+    padding:7px;
+    width:220px;
+    border:none;
+    background-color: #05060f1a;
+}
+.signup-btn{
+    padding:10px;
+    border:none;
+    transition:0.5s ease;
+    background-color:rgba(0, 24, 208, 0.84);
+    color:white;
+    border-radius:4px;
+    font-weight: bold;
+    width:200px;
+}
+.signup-btn:hover{
+    background-color:black;
+    color:white;
+}

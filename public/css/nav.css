@@ -1,0 +1,126 @@
+@font-face {
+    font-family: myfont;
+    src: url('../fonts/NIKEA.otf');
+}
+*{
+    margin:0px;
+}
+*::-webkit-scrollbar{
+    display:none;
+}
+nav{
+    background-color:rgba(206, 201, 201, 0.366);
+    width:100vw;
+    height:40px;
+    margin:0px;
+    font-family:myfont;
+    font-size:13px;
+    display:flex;
+    position:sticky;
+    top:0px;
+    justify-content:end;
+    align-items:center;
+    gap:480px;
+}
+.active{
+    color:rgba(15, 15, 15, 0.533);
+}
+nav>ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+nav>div{
+    margin-right:30px;
+}
+nav ul a{
+    text-decoration:none;
+    color:black;
+    transition:0.5s ease;
+
+}
+nav ul a:hover{
+    transform: scale(1.09,1.09);
+    color:rgba(15, 15, 15, 0.533);
+}
+.active{
+    color:rgba(15, 15, 15, 0.533);
+}
+.profile-div{
+    background-color:black;
+    color:white;
+    position:absolute;
+    top:40px;
+    right:0px;
+    z-index:99;
+    margin:0px;
+    width:190px;
+    height:300px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    font-family: myfont;
+    display:none;
+}
+.profile-div ul{
+    display:flex;
+    width:185px;
+    list-style:none;
+    flex-direction: column;
+    gap:5px;
+}
+.profile-div >ul>a{
+    width:190px;
+    padding:7px;
+    background-color:white;
+    color:black;
+    list-style:none;
+    border:2px solid white;
+    transition:.5s ease;
+    border: none;
+}
+.profile-div ul>a:hover{
+    transform:scale(0.98,0.98);
+    background-color:rgba(227, 227, 227, 0.717);
+}
+.profile-div > div{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap:10px;
+}
+.profile-div > div  button{
+    padding:5px;
+    background-color:rgb(221, 0, 0);
+    border:none;
+    color:white;
+    font-family:myfont;
+    transition:.5s ease;
+    border-radius:3px;
+}
+.profile-div > div  button:hover{
+    background-color:rgba(255, 255, 255, 0.577);
+}
+.logout-btn{
+    background-color:rgb(221, 0, 0);
+    color:white;
+    padding:5px;
+}
+.logout-btn:hover{
+    background-color: rgba(255, 255, 255, 0.426);
+}
+.display{
+    display:flex;
+    animation:slide .5s ease;
+}
+@keyframes slide {
+    from{
+        right:-100px;
+    }
+    to{
+        right:0px;
+    }
+}
